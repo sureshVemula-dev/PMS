@@ -1,0 +1,39 @@
+.row{
+	--bs-gutter-x: 0rem; 
+}
+
+li{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+.profile-img{
+	width: 38px;
+}
+
+.nav-head{
+	min-height: 64px;
+	background: #fff;
+}
+
+.cmpnyLogo>img{
+	width: 140px;
+}
+
+.dropdown-toggle::after{
+	display: none;
+}
+
+.dropdown-toggle{
+	text-decoration: none;
+}
+
+.fa-bar-chart{
+    font-size: 18px;
+    color: #000;
+}
+
+.side-panel-toggle{
+    cursor: pointer;
+}

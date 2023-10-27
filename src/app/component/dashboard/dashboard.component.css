@@ -1,0 +1,65 @@
+.row{
+	--bs-gutter-x: 0rem; 
+}
+
+li{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+.profile-img{
+	width: 38px;
+}
+
+.nav-head{
+	min-height: 64px;
+	background: #fff;
+	border-bottom: 1px solid #dadce0;
+}
+
+.cmpnyLogo>img{
+	width: 140px;
+}
+
+.name, .menu{
+	color: #000;
+}
+
+.dashboard-icon, .logout, .menu{
+	cursor: pointer;
+}
+
+.name{
+	font-size: 13px;
+}
+
+.dropdown-toggle::after{
+	display: none;
+}
+
+.dropdown-toggle{
+	text-decoration: none;
+}
+
+.dashboardContent{
+    background: #f5f7fa !important;
+	height: 100vh;
+}
+
+.dashboardName{
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.reviewContent{
+	border-bottom: 1px solid #e6ecf5;
+}
+
+.salesName{
+	border-top: 1px solid #e6ecf5;
+}
+
+.salesList{
+	border-bottom: 1px solid #e6ecf5;
+}

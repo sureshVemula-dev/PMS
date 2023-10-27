@@ -1,0 +1,127 @@
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.companyLogo {
+  width: 134px;
+}
+
+.companyName {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.loginName {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.loginDescription {
+  font-size: 12px !important;
+  line-height: 20px;
+  color: #636363;
+}
+
+.mat-icon {
+  height: 24px;
+  width: 24px;
+  border-left: 1px solid #ddd;
+}
+
+.form-group .mat-form-field {
+  margin-bottom: 0px !important;
+}
+
+.loginBtn {
+  border-radius: 3px;
+  background-color: #229954;
+  color: whitesmoke;
+}
+
+.resetBtn {
+  border-radius: 3px;
+  background-color: #ef6d5f;
+  color: black;
+}
+
+.btn {
+  font-size: 13px;
+  padding: 5px 20px;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 4px 30px 6px;
+  border-top: 1px solid #e6ecf5;
+  width: 100%;
+  z-index: -1000;
+  right: 0;
+}
+
+.eye {
+  background: none;
+}
+
+.pull-right {
+  float: right;
+  font-size: 12px !important;
+  line-height: 20px;
+  color: #636363;
+  padding-top: 8px;
+}
+
+.pull-right>a {
+  text-decoration: none;
+  color: #00096e;
+}
+
+.pull-right>a:hover {
+  color: #116fbf;
+  cursor: pointer;
+}
+
+.material-icons-outlined {
+  padding: 6px;
+  box-sizing: content-box;
+}
+
+.mat-icon {
+  padding: 6px !important;
+}
+
+mat-form-field {
+  line-height: 1 !important;
+}
+
+.backBtn {
+  border-radius: 3px;
+  background-color: #178ad6;
+  color: whitesmoke;
+}
+
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+.form-select:focus{
+  box-shadow: none !important;
+}
+
+.form-select{
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.form-select > option{
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+  .btn {
+    padding: 6px 14px;
+  }
+}

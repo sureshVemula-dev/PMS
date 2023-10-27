@@ -1,0 +1,72 @@
+<section>
+  <div class="row vh-100">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <div class="col-md-8 d-none d-md-block">
+        <div class="full-height bg baneerimg">
+          <img class="w-100 vh-100" src="../../../assets/images/MIS Portal.jpg" alt="Background_Logo">
+        </div>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-center justify-content-center p-4">
+        <div class="full-height bg-white w-100">
+          <div class="vertical-align w-100">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img class="companyLogo" src="../../../assets/images/sheenlac_logo1.png" alt="sheenlac_logo">
+              <p class="companyName mt-2">Sheenlac Paints Ltd.</p>
+            </div>
+            <div *ngIf="loginView" class="px-0 px-md-0 px-lg-3 px-xl-5 mx-auto">
+              <h1 class="d-flex justify-content-center mt-3 loginName">Login</h1>
+              <p class="loginDescription">Please enter your user name and password to login</p>
+              <form [formGroup]="loginForm">
+                <div class="form-group">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Username</mat-label>
+                    <input matInput type="text" [formControl]="usernameControl" />
+                    <mat-icon matSuffix>perm_identity</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="form-group">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" (keypress)="keyPress($event)"
+                      formControlName="password" />
+                    <button mat-icon-button matSuffix class="border-0 eye p-0" (click)="hide = !hide"
+                      [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon class="material-icons-outlined">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+                </div>
+                <div class="d-flex">
+                  <button class="loginBtn btn" (click)="formSubmit('login')">Login</button>
+                  <button class="resetBtn btn ms-1" (click)="formSubmit('forget')">Reset Password</button>
+                </div>
+              </form>
+            </div>
+            <div *ngIf="companyView" class="px-0 px-md-0 px-lg-3 px-xl-5 mx-auto">
+              <p class="loginDescription mt-3">Please select the Position</p>
+              <div class="form-group mb-4">
+                <select class="form-select">
+                  <option class="dropdown-item" disabled selected>Select an Option</option>
+                  <option value="Sheenlac Paints">Sheenlac Paints</option>
+                  <option value="La Ferme De Peter LLP">La Ferme De Peter LLP</option>
+                  <option value="Farm App">Farm App</option>
+                  <option value="Tech Services">Tech Services</option>
+                </select>
+              </div>
+              <div class="d-flex">
+                <button class="loginBtn btn" (click)="loginclick()">Submit</button>
+                <button class="backBtn btn ms-1" (click)="gobackclick()" title="Back to Login">
+                  <i class="fa fa-hand-o-left"></i> Go Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login-footer">
+          <span class="font-size-13 pull-right pdd-top-10">&copy; Copyrights
+            <a target="_blank" style="cursor: pointer" href="http://mapolgroup.com">Sheenlac Paints Pvt Ltd.</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

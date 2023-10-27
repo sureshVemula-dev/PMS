@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after{
+    content: none !important;
+}
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label{
+    font-size: 12px;
+}
+.mdc-text-field--outlined, .mat-mdc-form-field-flex{
+    height: 44px !important;
+}
+.mat-mdc-form-field:not(.mat-form-field-disabled) .mat-mdc-floating-label.mdc-floating-label{
+    top: 22px;
+}
+.mat-mdc-form-field-infix{
+    width: 210px !important;
+}
+.mat-mdc-text-field-wrapper .mdc-text-field--outlined .mat-mdc-form-field-infix{
+    padding: 4px 0px;
+    min-height: 44px;
+}
+.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above{
+    transform: translateY(-28px) scale(0.75) !important;
+}
+.mdc-text-field--outlined .mdc-text-field__input{
+    position: absolute;
+    top: 12px;
+}
+/* .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing{
+    border-color: #c0ccda !important;
+} */
+/* .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline .mdc-notched-outline__trailing{
+    border-color: #c0ccda !important;
+} */
