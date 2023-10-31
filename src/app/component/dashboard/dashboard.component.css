@@ -12,6 +12,19 @@
 	font-size: 18px;
 }
 
+.dashboard{
+	position: relative;
+	top: 64px;
+	z-index: -1;
+}
+
+.dashboard-icon{
+	cursor: pointer;
+	text-decoration: none;
+	color: #1b2e4b;
+	font-weight: 600;
+}
+
 .reviewContent{
 	border-bottom: 1px solid #e6ecf5;
 }

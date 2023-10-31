@@ -1,8 +1,25 @@
-<mat-sidenav>
-  <mat-nav-list class="close-icon">
-    <mat-icon>close</mat-icon>
-  </mat-nav-list>
-  <mat-nav-list>
-    <!-- <app-menu-list-item></app-menu-list-item> -->
-  </mat-nav-list>
-</mat-sidenav>
+<!-- Sidebar navigation -->
+<div id="slide-out" class="side-nav sn-bg-4 fixed">
+  <div class="companyLogo d-flex justify-content-center align-items-center">
+    <a class="cmpnyLogo" href="/login">
+      <img src="../../../assets/images/logo.png" alt="companyLogo">
+    </a>
+    <!-- <p class="close-icon my-2 me-3">
+      <i class="fa-regular fa-rectangle-xmark"></i>
+    </p> -->
+  </div>
+  <div class="tabList">
+    <li class="waves-effect d-flex justify-content-around align-items-center py-3">
+      <i class="fa-sharp fa-solid fa-bars-staggered"></i> Sales Analyst
+      <i class="fas fa-angle-down rotate-icon"></i>
+    </li>
+    <div class="collapsible-body">
+      <li href="#" class="waves-effect d-flex justify-content-evenly py-3 px-2">
+        <i class="fa-sharp fa-solid fa-bars-staggered"></i>Submit listing
+      </li>
+      <li href="#" class="waves-effect d-flex justify-content-evenly py-3 px-2">
+        <i class="fa-sharp fa-solid fa-bars-staggered"></i>Registration form
+      </li>
+    </div>
+  </div>
+</div>

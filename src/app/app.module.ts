@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { LoginComponent } from './authr/login/login.component';
 import { ResetComponent } from './authr/reset/reset.component';
 import { LoaderComponent } from './loader/loader.component';
@@ -37,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
+    MatTooltipModule,
     MatInputModule,
     MatIconModule,
     MatSidenavModule,

@@ -8,6 +8,11 @@ li{
 	align-items: center;
 }
 
+.header{
+	position: fixed;
+	width: 100%;
+}
+
 .profile-img{
 	width: 38px;
 }
@@ -18,9 +23,9 @@ li{
 	border-bottom: 1px solid #dadce0;
 }
 
-.cmpnyLogo>img{
-	width: 140px;
-}
+/* .cmpnyLogo>img{
+	width: 130px;
+} */
 
 .name, .menu{
 	color: #000;

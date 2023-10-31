@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
           if (result.StatusCode === '200') {
             this.loginView = false;
             this.companyView = true;
-            console.log(result.response);
+            console.log('Success');
           }
           this.spinner.hide();
         },
@@ -73,7 +73,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginclick() {
-    this.router.navigate(['/header']);
+    this.router.navigate(['/dashboard']);
   }
 
   gobackclick() {

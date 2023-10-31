@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './authr/login/login.component';
 import { ResetComponent } from './authr/reset/reset.component';
 import { NotFoundError } from 'rxjs';
-import { HeaderComponent } from './component/header/header.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -24,8 +24,8 @@ const routes: Routes = [
     loadChildren: () => import('./authr/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'header',
-    component: HeaderComponent
+    path: 'dashboard',
+    component: DashboardComponent,
   },
   {
     path: '**',
