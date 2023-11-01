@@ -1,39 +1,97 @@
-.row{
-	--bs-gutter-x: 0rem; 
+.row {
+  --bs-gutter-x: 0rem;
 }
 
-li{
-	list-style-type: none;
-	display: flex;
-	align-items: center;
+.header{
+  border-bottom: 1px solid lightgray;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.profile-img{
-	width: 38px;
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
-.nav-head{
-	min-height: 64px;
-	background: #fff;
+.profile-img {
+  width: 38px;
 }
 
-.cmpnyLogo>img{
-	width: 140px;
+.nav-head {
+  min-height: 64px;
+  background: #fff;
 }
 
-.dropdown-toggle::after{
-	display: none;
+.cmpnyLogo>img {
+  width: 140px;
 }
 
-.dropdown-toggle{
-	text-decoration: none;
+.dropdown-toggle::after {
+  display: none;
 }
 
-.fa-bar-chart{
-    font-size: 18px;
-    color: #000;
+.fa-bar-chart {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
 }
 
-.side-panel-toggle{
-    cursor: pointer;
+.side-panel-toggle {
+  cursor: pointer;
+}
+
+.form_title {
+  color: #00096e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 12px
+}
+
+.btn-primary {
+  background-color: #00096e;
+  border-color: #00096e;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #8c8aeb;
+  border-color: #8c8aeb;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #ff3c7e;
+  border-color: #ff3c7e;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #ff568f;
+  border-color: #ff568f;
+}
+
+.btn {
+  font-size: 12px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  height: 26px;
+}
+
+.form-control {
+  box-shadow: none;
+  height: 32px;
+  border-radius: 3px;
+}
+
+.form-label,
+.form-control {
+  font-size: 12px;
 }

@@ -23,7 +23,7 @@ export class AppComponent {
 
   isHeaderVisible(): boolean {
     const currentUrl = this.router.url;
-    if(currentUrl === '/' || currentUrl === '/login') {
+    if(currentUrl === '/' || currentUrl === '/login' || currentUrl === '/reset') {
       this.currentUrlStatus = false;
     } else {
       this.currentUrlStatus = true;
