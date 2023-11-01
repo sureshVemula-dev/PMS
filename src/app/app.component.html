@@ -1,5 +1,5 @@
 <div *ngIf="isHeaderVisible()">
   <app-header (isSidebarToggle)="getData(message)"></app-header>
-  <!-- <app-sidenav></app-sidenav> -->
+  <app-sidenav [ngClass]="message ? 'sidebar-closed' : 'sidebar-open'"></app-sidenav>
 </div>
 <router-outlet></router-outlet>

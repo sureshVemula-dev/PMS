@@ -6,7 +6,6 @@
     0 16px 24px 2px rgba(0, 0, 0, .14),
     0 6px 30px 5px rgba(0, 0, 0, .12);
   position: fixed;
-  /* top: 64px; */
 }
 
 .companyLogo{
@@ -14,40 +13,40 @@
   height: 70px;
 }
 
-.waves-effect {
-  text-decoration: none !important;
-  color: #000;
-}
-
 .fa-bars-staggered {
   font-size: 20px;
   color: green;
 }
 
-.waves-effect:hover {
+.tabList li a:hover {
+  background: beige;
+}
+
+.collapsible-body li:hover {
   background: rgba(0, 0, 0, .04);
 }
 
-.tabList,
-.close-icon {
+.collapsible-body li{
   cursor: pointer;
 }
 
-.tabList>a>.fa-angle-down ::before {
-  transform: rotate(0deg);
-}
-
-.collapsible-body {
-  display: none;
-  transform: rotate(90deg);
-}
-
-.collapsible-body a {
-  display: block !important;
-  transition: background-color 0.3s;
-}
-
-.tabList.active {
-  display: block !important;
+.rotate-icon-open {
   transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-angle-down{
+  position: absolute;
+  right: 20px;
+}
+
+.tabList li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: 1s;
 }

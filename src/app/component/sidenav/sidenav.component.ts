@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
+  activeParent: string | null = null;
 
+  toggleChildLists(parent: string) {
+    this.activeParent = (this.activeParent === parent) ? null : parent;
+  }
 }

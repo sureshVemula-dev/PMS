@@ -1,25 +1,46 @@
 <!-- Sidebar navigation -->
-<div id="slide-out" class="side-nav sn-bg-4 fixed">
+<div id="slide-out" class="side-nav">
   <div class="companyLogo d-flex justify-content-center align-items-center">
     <a class="cmpnyLogo" href="/login">
       <img src="../../../assets/images/logo.png" alt="companyLogo">
     </a>
-    <!-- <p class="close-icon my-2 me-3">
-      <i class="fa-regular fa-rectangle-xmark"></i>
-    </p> -->
   </div>
-  <div class="tabList">
-    <li class="waves-effect d-flex justify-content-around align-items-center py-3">
-      <i class="fa-sharp fa-solid fa-bars-staggered"></i> Sales Analyst
-      <i class="fas fa-angle-down rotate-icon"></i>
+  <ul class="tabList p-0 mb-0">
+    <li id="sales" class="waves-effect" (click)="toggleChildLists('sales')">
+      <a class="d-flex align-items-center py-3">
+        <i class="fa-sharp fa-solid fa-bars-staggered px-3"></i> Sales Analyst
+        <i class="fas fa-angle-down rotate-icon" [ngClass]="{'rotate-icon-open': activeParent === 'sales'}"></i>
+      </a>
+      <ul class="p-0 collapsible-body" [ngClass]="{'hidden': activeParent !== 'sales'}">
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 1
+        </li>
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 2
+        </li>
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 3
+        </li>
+      </ul>
     </li>
-    <div class="collapsible-body">
-      <li href="#" class="waves-effect d-flex justify-content-evenly py-3 px-2">
-        <i class="fa-sharp fa-solid fa-bars-staggered"></i>Submit listing
-      </li>
-      <li href="#" class="waves-effect d-flex justify-content-evenly py-3 px-2">
-        <i class="fa-sharp fa-solid fa-bars-staggered"></i>Registration form
-      </li>
-    </div>
-  </div>
+  </ul>
+  <ul class="tabList p-0 mb-0">
+    <li id="execute" class="waves-effect" (click)="toggleChildLists('execute')">
+      <a class="d-flex align-items-center py-3">
+        <i class="fa-sharp fa-solid fa-bars-staggered px-3"></i> Sales Distributors
+        <i class="fas fa-angle-down rotate-icon" [ngClass]="{'rotate-icon-open': activeParent === 'execute'}"></i>
+      </a>
+      <ul class="p-0 collapsible-body" [ngClass]="{'hidden': activeParent !== 'execute'}">
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 1
+        </li>
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 2
+        </li>
+        <li class="d-flex justify-content-evenly py-3 px-2">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>SubListing 3
+        </li>
+      </ul>
+    </li>
+  </ul>
 </div>
